@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karunia Sikunir - Villa & Homestay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://via.placeholder.com/150x50?text=KARUNIA" alt="Logo Karunia">
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1>Karunia Sikunir, Villa & Homestay Syariah</h1>
+            <p>Dapatkan malam terbaik yang bisa anda dapatkan dengan keindahan alam sekitar villa.🌙</p>
+            <a href="#explore" class="btn">Explore Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="villa-info">
+            <div class="info-card">
+                <img src="https://via.placeholder.com/800x600?text=Kamar+Villa+1" alt="Kamar Villa 1">
+            </div>
+            <div class="info-details">
+                <h2>Berdamai dengan Alam</h2>
+                <p>"love, life, laugh"</p>
+                <h3>Karunia Homestay & Villa Sikunir</h3>
+                <p>Nikmati keindahan alam yang memukau dari homestay dan villa sikunir karunia, dengan pemandangan yang menakjubkan yang akan membuat liburanmu tak terlupakan.
+                <br>Loc. Sikunir, Sembungan, Wonosobo</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> 3 Kamar dengan kamar mandi dalam</li>
+                    <li><i class="fas fa-check-circle"></i> Luas, bersih dan nyaman</li>
+                    <li><i class="fas fa-check-circle"></i> Lokasi strategis</li>
+                    <li><i class="fas fa-check-circle"></i> Dekat dengan akses wisata dieng</li>
+                    <li><i class="fas fa-check-circle"></i> Best view perbukitan sikunir</li>
+                </ul>
+                <a href="#" class="btn" onclick="scrollToRooms()">View Rooms</a>
+            </div>
+        </section>
+
+        <section id="rooms" class="room-section">
+            <div class="room-card">
+                <img src="https://via.placeholder.com/800x600?text=Kamar+Glamping" alt="Kamar Glamping">
+                <h3>Kamar Glamping</h3>
+                <p>Mulai <span>800 K</span></p>
+                <p>Syarat & Ketentuan Berlaku</p>
+                <a href="#" class="btn" onclick="bookRoom('Kamar Glamping')">Pesan Kamar</a>
+            </div>
+            <div class="room-card">
+                <img src="https://via.placeholder.com/800x600?text=Kamar+Family" alt="Kamar Family Room">
+                <h3>Kamar Family Room</h3>
+                <p>Mulai <span>500 K</span></p>
+                <p>Syarat & Ketentuan Berlaku</p>
+                <a href="#" class="btn" onclick="bookRoom('Kamar Family Room')">Pesan Kamar</a>
+            </div>
+        </section>
+
+        <section class="facilities-section">
+            <h2>Fasilitas</h2>
+            <div class="facilities-grid">
+                <div class="facility-item">
+                    <i class="fas fa-bed"></i>
+                    <p>Dua bed</p>
+                </div>
+                <div class="facility-item">
+                    <i class="fas fa-shower"></i>
+                    <p>Kamar mandi dalam + air hangat</p>
+                </div>
+                <div class="facility-item">
+                    <i class="fas fa-tv"></i>
+                    <p>Smart tv</p>
+                </div>
+                <div class="facility-item">
+                    <i class="fas fa-mountain"></i>
+                    <p>Best view</p>
+                </div>
+                <div class="facility-item">
+                    <i class="fas fa-wifi"></i>
+                    <p>Free wifi</p>
+                </div>
+                <div class="facility-item">
+                    <i class="fas fa-parking"></i>
+                    <p>Parkir depan Villa</p>
+                </div>
+                <div class="facility-item">
+                    <i class="fas fa-utensils"></i>
+                    <p>Makanan & minuman</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="attraction-section">
+            <div class="attraction-card">
+                <img src="https://via.placeholder.com/800x400?text=Sunrise+Sikunir" alt="Sunrise Sikunir">
+                <h3>Sunrise Sikunir</h3>
+                <p>Sikunir menjadi destinasi favorit bagi banyak wisatawan karena keindahan alamnya yang memukau. Salah satu daya tarik utama Sikunir adalah Golden Sunrise yang setiap hari, bukit Sikunir menyuguhkan pemandangan matahari terbit yang spektakuler, di mana langit berubah warna dari merah muda, jingga, hingga emas, menciptakan panorama yang luar biasa. Selain itu, udara sejuk di Sikunir memberikan sensasi tersendiri bagi para pengunjung yang ingin melepas penat dari hiruk-pikuk kota. Trekking menuju puncak Sikunir juga menjadi pengalaman seru tersendiri, dengan jalur yang menantang namun memuaskan.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Hubungi Kami</h2>
+            <form action="#" method="post">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" required>
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit" class="btn">Kirim</button>
+            </form>
+        </section>
+
+    </main>
+
+    <aside class="social-media-bar">
+        <h4>Follow us on Social Media</h4>
+        <a href="https://instagram.com/villakaruniasikunir" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i> instagram</a>
+        <a href="https://www.youtube.com/@villakaruniasikunir" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i> youtube</a>
+        <a href="https://www.tiktok.com/@villakaruniasikunir" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i> tiktok</a>
+    </aside>
+
+    <div class="whatsapp-btn">
+        <a href="https://wa.me/628123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Homestay & Villa Karunia Sikunir</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
