@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --primary-color: #A98357;
+    --secondary-color: #D4B99D;
+    --text-color: #333;
+    --background-color: #F5F5F5;
+    --light-background: #FFF;
+    --button-bg: #4A90E2;
+    --button-hover: #3A7BC3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('https://via.placeholder.com/1200x800?text=Hero+Image') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--button-bg);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--button-hover);
+}
+
+main {
+    padding: 2rem;
+}
+
+.info-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.info-details {
+    background: var(--light-background);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.info-details h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.info-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-details ul li {
+    padding: 0.5rem 0;
+}
+
+.room-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.room-card {
+    background: var(--light-background);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.room-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.room-card span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.facilities-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.facility-item {
+    background: var(--light-background);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.facility-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.attraction-section {
+    margin-top: 2rem;
+}
+
+.attraction-card {
+    background: var(--light-background);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.attraction-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.contact-section {
+    margin-top: 2rem;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--light-background);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contact-section label {
+    font-weight: bold;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.social-media-bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.social-icon i {
+    font-size: 1.5rem;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #25D366;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .navbar {
+        padding: 1rem 5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    main {
+        padding: 2rem 5rem;
+    }
+
+    .info-section {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .info-card, .info-details {
+        flex: 1;
+    }
+
+    .room-section {
+        flex-direction: row;
+    }
+
+    .facilities-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
